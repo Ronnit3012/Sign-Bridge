@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+body {
+  background: #f5f7fa;
+  color: #222;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +44,267 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.containerLayout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: #f5f7fa;
+  gap: 2.5em;
+}
+
+.divison {
+   background-color: #90caf9;
+   width: 10px;
+   height: 100%;
+   position: relative;
+   z-index: 2;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(25, 118, 210, 0.07);
+  border-radius: 16px;
+  width: 50vw;
+  height: 100%;
+  margin: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.lang-navbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  background: #e3f2fd;
+  border-radius: 16px 16px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.lang-btn {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 0.2em;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.lang-btn.selected {
+  background: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  border: 1.5px solid #1976d2;
+}
+
+.lang-btn:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 1.5px solid #1976d2;
+}
+
+.lang-dropdown {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.lang-dropdown option {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+/* Make main take all available space below navbar */
+.container main {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+/* Make textarea fill the main area */
+.container textarea,
+.textarea-with-mic {
+  flex: 1 1 0;
+  width: 100%;
+  min-height: 0;
+  resize: none;
+  margin: 0;
+  border-radius: 0 0 16px 16px;
+  border: 1.5px solid #90caf9;
+  padding: 1em;
+  font-size: 1.1em;
+  background: #fff;
+  color: #222;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px 0 rgba(25, 118, 210, 0.04);
+}
+
+.textarea-mic-wrapper {
+  position: relative;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make mic button look simple and elegant, like a Material UI icon */
+.mic-btn {
+  background: transparent;
+  color: #1976d2;
+  border: none !important;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.7em;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+}
+
+.mic-btn:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.mic-btn:active {
+  background: #bbdefb;
+}
+
+.mic-btn:focus {
+  outline: 2px solid #90caf9;
+}
+
+.mic-btn svg {
+  width: 1.3em;
+  height: 1.3em;
+  stroke: none;
+  fill: currentColor;
+  border: none !important;
+  background: none;
+}
+
+.mic-btn.recording {
+  color: #fff;
+  background: #1976d2;
+}
+
+.mic-btn.recording:hover {
+  background: #1565c0;
+}
+
+.mic-btn.recording svg {
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 1.2em 0 0.5em 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-sidebar {
+  min-width: 260px;
+  max-width: 320px;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1.5em;
+}
+
+.app-title {
+  text-align: left;
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #1976d2;
+  letter-spacing: .04em;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin-top: 0em;
+  margin-bottom: 0.2em;
+  text-shadow: 0 2px 12px #90caf9, 0 1px 0 #1976d2;
+}
+
+/* Make swap button look simple and elegant, like a Material UI icon */
+.swap-btn {
+  background: transparent;
+  color: #1976d2;
+  border: none !important;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-size: 2em;
+  outline: none;
+  padding: 0;
+}
+
+.swap-btn:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.swap-btn svg {
+  width: 1.7em;
+  height: 1.7em;
+  stroke: none;
+  fill: currentColor;
+  border: none !important;
+  background: none;
+}
+
+.swap-btn:active {
+  background: #bbdefb;
+}
+
+.swap-btn:focus {
+  outline: 2px solid #90caf9;
+}
+
+/* Keep centering and wrapper styles as before */
+.swap-btn-wrapper {
+  position: relative;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swap-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
