@@ -13,6 +13,12 @@ const LANGUAGES = [
   "Italian"
 ];
 
+const SIGN_LANGUAGES = [
+  "ISL", // Indian Sign Language
+  "ASL", // American Sign Language
+  "ESL"  // English Sign Language
+];
+
 const PLACEHOLDERS = {
   English: "Enter your text here...",
   Hindi: "अपना पाठ यहाँ लिखें...",
@@ -41,7 +47,8 @@ const INPUT_LANG_CODES = {
 
 function LanguageNavbar({ selected, onClick, dropdownId, side }) {
   const visibleCount = 4;
-  const sortedLanguages = [selected, ...LANGUAGES.filter((l) => l !== selected)];
+  const languageList = side === "right" ? SIGN_LANGUAGES : LANGUAGES;
+  const sortedLanguages = [selected, ...languageList.filter((l) => l !== selected)];
   const visibleLanguages = sortedLanguages.slice(0, visibleCount);
   const overflowLanguages = sortedLanguages.slice(visibleCount);
 
