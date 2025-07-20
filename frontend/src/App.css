@@ -1,13 +1,32 @@
+/* --- DARK MODE CSS VARIABLES --- */
+:root {
+  --color-bg: #181a20;
+  --color-bg-secondary: #23262f;
+  --color-bg-tertiary: #22242c;
+  --color-text: #e3e6ed;
+  --color-text-secondary: #b0b3bb;
+  --color-accent: #90caf9;
+  --color-primary: #1976d2;
+  --color-primary-dark: #1565c0;
+  --color-btn-bg: #23262f;
+  --color-btn-hover: #1976d2;
+  --color-btn-active: #1565c0;
+  --color-border: #31343e;
+  --color-shadow: 0 2px 12px 0 rgba(25, 118, 210, 0.12);
+}
+
+body {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-body {
-  background: #f5f7fa;
-  color: #222;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .logo {
@@ -15,12 +34,13 @@ body {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  filter: drop-shadow(0 0 2em var(--color-primary));
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--color-accent));
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em var(--color-primary));
 }
 
 @keyframes logo-spin {
@@ -40,10 +60,14 @@ body {
 
 .card {
   padding: 2em;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  border-radius: 12px;
+  box-shadow: var(--color-shadow);
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--color-text-secondary);
 }
 
 .containerLayout {
@@ -52,27 +76,24 @@ body {
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background: #f5f7fa;
+  background: var(--color-bg);
   gap: 2.5em;
 }
 
 .divison {
-   background-color: #90caf9;
-   width: 10px;
-   height: 100%;
-   position: relative;
-   z-index: 2;
+  display: none;
 }
 
 .container {
-  background: #fff;
-  box-shadow: 0 2px 12px 0 rgba(25, 118, 210, 0.07);
+  background: var(--color-bg-secondary);
+  box-shadow: var(--color-shadow);
   border-radius: 16px;
   width: 50vw;
   height: 100%;
   margin: 0 1.5em;
   display: flex;
   flex-direction: column;
+  color: var(--color-text);
 }
 
 .lang-navbar {
@@ -80,17 +101,18 @@ body {
   align-items: center;
   gap: 0.75em;
   padding: 0.5em 0.5em 0.5em 1em;
-  background: #e3f2fd;
+  background: var(--color-bg-tertiary);
   border-radius: 16px 16px 0 0;
   position: sticky;
   top: 0;
   z-index: 2;
+  color: var(--color-text);
 }
 
 .lang-btn {
-  background: #fff;
-  color: #1976d2;
-  border: 1px solid #90caf9;
+  background: var(--color-btn-bg);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 0.5em 1.2em;
   font-size: 1em;
@@ -100,22 +122,22 @@ body {
 }
 
 .lang-btn.selected {
-  background: #1976d2;
+  background: var(--color-btn-hover);
   color: #fff;
   font-weight: bold;
-  border: 1.5px solid #1976d2;
+  border: 1.5px solid var(--color-btn-hover);
 }
 
 .lang-btn:hover {
-  background: #e3f2fd;
-  color: #1565c0;
-  border: 1.5px solid #1976d2;
+  background: var(--color-btn-hover);
+  color: #fff;
+  border: 1.5px solid var(--color-btn-hover);
 }
 
 .lang-dropdown {
-  background: #fff;
-  color: #1976d2;
-  border: 1px solid #90caf9;
+  background: var(--color-bg-tertiary);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 0.4em 1em;
   font-size: 1em;
@@ -124,11 +146,10 @@ body {
 }
 
 .lang-dropdown option {
-  background: #e3f2fd;
-  color: #1976d2;
+  background: var(--color-bg-secondary);
+  color: var(--color-accent);
 }
 
-/* Make main take all available space below navbar */
 .container main {
   flex: 1 1 0;
   display: flex;
@@ -136,7 +157,6 @@ body {
   justify-content: stretch;
 }
 
-/* Make textarea fill the main area */
 .container textarea,
 .textarea-with-mic {
   flex: 1 1 0;
@@ -145,13 +165,13 @@ body {
   resize: none;
   margin: 0;
   border-radius: 0 0 16px 16px;
-  border: 1.5px solid #90caf9;
+  border: 1.5px solid var(--color-border);
   padding: 1em;
   font-size: 1.1em;
-  background: #fff;
-  color: #222;
+  background: var(--color-bg-tertiary);
+  color: var(--color-text);
   box-sizing: border-box;
-  box-shadow: 0 1px 4px 0 rgba(25, 118, 210, 0.04);
+  box-shadow: 0 1px 4px 0 rgba(25, 118, 210, 0.08);
 }
 
 .textarea-mic-wrapper {
@@ -162,10 +182,9 @@ body {
   height: 100%;
 }
 
-/* Make mic button look simple and elegant, like a Material UI icon */
 .mic-btn {
   background: transparent;
-  color: #1976d2;
+  color: var(--color-accent);
   border: none !important;
   border-radius: 50%;
   width: 44px;
@@ -185,16 +204,16 @@ body {
 }
 
 .mic-btn:hover {
-  background: #e3f2fd;
-  color: #1565c0;
+  background: var(--color-btn-hover);
+  color: #fff;
 }
 
 .mic-btn:active {
-  background: #bbdefb;
+  background: var(--color-btn-active);
 }
 
 .mic-btn:focus {
-  outline: 2px solid #90caf9;
+  outline: 2px solid var(--color-accent);
 }
 
 .mic-btn svg {
@@ -208,11 +227,11 @@ body {
 
 .mic-btn.recording {
   color: #fff;
-  background: #1976d2;
+  background: var(--color-primary);
 }
 
 .mic-btn.recording:hover {
-  background: #1565c0;
+  background: var(--color-primary-dark);
 }
 
 .mic-btn.recording svg {
@@ -243,18 +262,17 @@ body {
   text-align: left;
   font-size: 2.1em;
   font-weight: 700;
-  color: #1976d2;
+  color: var(--color-accent);
   letter-spacing: .04em;
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   margin-top: 0em;
   margin-bottom: 0.2em;
-  text-shadow: 0 2px 12px #90caf9, 0 1px 0 #1976d2;
+  text-shadow: 0 2px 12px var(--color-primary), 0 1px 0 var(--color-accent);
 }
 
-/* Make swap button look simple and elegant, like a Material UI icon */
 .swap-btn {
   background: transparent;
-  color: #1976d2;
+  color: var(--color-accent);
   border: none !important;
   border-radius: 50%;
   width: 48px;
@@ -271,8 +289,8 @@ body {
 }
 
 .swap-btn:hover {
-  background: #e3f2fd;
-  color: #1565c0;
+  background: var(--color-btn-hover);
+  color: #fff;
 }
 
 .swap-btn svg {
@@ -285,14 +303,13 @@ body {
 }
 
 .swap-btn:active {
-  background: #bbdefb;
+  background: var(--color-btn-active);
 }
 
 .swap-btn:focus {
-  outline: 2px solid #90caf9;
+  outline: 2px solid var(--color-accent);
 }
 
-/* Keep centering and wrapper styles as before */
 .swap-btn-wrapper {
   position: relative;
   width: 10px;
