@@ -16,7 +16,7 @@ const LANGUAGES = [
 const SIGN_LANGUAGES = [
   "ISL", // Indian Sign Language
   "ASL", // American Sign Language
-  "ESL"  // English Sign Language
+  "BSL"  // British Sign Language
 ];
 
 const PLACEHOLDERS = {

@@ -6,7 +6,7 @@ import CameraView from "./CameraView";
 
 function Container() {
   const [selectedLanguageLeft, setSelectedLanguageLeft] = useState("English");
-  const [selectedLanguageRight, setSelectedLanguageRight] = useState("English");
+  const [selectedLanguageRight, setSelectedLanguageRight] = useState("ISL");
   const [inputText, setInputText] = useState("");
   const [isSwapped, setIsSwapped] = useState(false);
 
@@ -32,6 +32,7 @@ function Container() {
   };
 
   const isOutputOnLeft = isSwapped;
+  const hasTextInput = inputText.trim().length > 0;
 
   return (
     <div className="containerLayout">
@@ -40,8 +41,10 @@ function Container() {
           <div className="container">
             <LanguageNavbar {...rightProps} />
             <main>
-              {/* Output area: show camera if output is on left */}
-              {isOutputOnLeft && <CameraView />}
+              {/* Output area: show sign language video when there's text input */}
+              {isOutputOnLeft && hasTextInput && <CameraView showSignLanguageVideo={true} />}
+              {/* Show camera when no text and output is on left */}
+              {isOutputOnLeft && !hasTextInput && <CameraView showSignLanguageVideo={false} />}
             </main>
           </div>
           <div className="divison swap-btn-wrapper">
@@ -91,7 +94,10 @@ function Container() {
           </div>
           <div className="container">
             <LanguageNavbar {...rightProps} />
-            <main>{/* Output area */}</main>
+            <main>{/* Output area */}
+              {/* Output area: show sign language video when there's text input */}
+              {!isOutputOnLeft && hasTextInput && <CameraView showSignLanguageVideo={true} />}
+            </main>
           </div>
         </>
       )}
