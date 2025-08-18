@@ -1,9 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="primary">
-      <ion-button routerLink="/about" queryParamsHandling="preserve" color="primary" shape="round" fill="solid">
-        {{ 'landing.about.title' | transloco }}
-      </ion-button>
     </ion-buttons>
     <ion-title>
       <app-logo [text]="'translate.logo' | transloco" />
@@ -15,7 +12,7 @@
   <div class="container">
     <div id="input-mode-group">
       @if (spokenToSigned) {
-        <app-translate-input-button mode="text" icon="language" />
+        <app-translate-input-button mode="text" icon="text" />
       } @else {
         <app-translate-input-button mode="webcam" icon="videocam" />
         <app-translate-input-button mode="upload" icon="cloud-upload" />
@@ -37,7 +34,5 @@
         </div>
       </div>
     </app-drop-pose-file>
-
-    <app-send-feedback />
   </div>
 </ion-content>

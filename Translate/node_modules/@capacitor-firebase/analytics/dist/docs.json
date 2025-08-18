@@ -1,0 +1,817 @@
+{
+  "api": {
+    "name": "FirebaseAnalyticsPlugin",
+    "slug": "firebaseanalyticsplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "getAppInstanceId",
+        "signature": "() => Promise<GetAppInstanceIdResult>",
+        "parameters": [],
+        "returns": "Promise<GetAppInstanceIdResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.4.0"
+          }
+        ],
+        "docs": "Retrieves the app instance id.\n\nOnly available for Android and iOS.",
+        "complexTypes": [
+          "GetAppInstanceIdResult"
+        ],
+        "slug": "getappinstanceid"
+      },
+      {
+        "name": "setConsent",
+        "signature": "(options: SetConsentOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetConsentOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "6.0.0"
+          }
+        ],
+        "docs": "Sets the user's consent mode.",
+        "complexTypes": [
+          "SetConsentOptions"
+        ],
+        "slug": "setconsent"
+      },
+      {
+        "name": "setUserId",
+        "signature": "(options: SetUserIdOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetUserIdOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Sets the user ID property.",
+        "complexTypes": [
+          "SetUserIdOptions"
+        ],
+        "slug": "setuserid"
+      },
+      {
+        "name": "setUserProperty",
+        "signature": "(options: SetUserPropertyOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetUserPropertyOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Sets a custom user property to a given value.",
+        "complexTypes": [
+          "SetUserPropertyOptions"
+        ],
+        "slug": "setuserproperty"
+      },
+      {
+        "name": "setCurrentScreen",
+        "signature": "(options: SetCurrentScreenOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetCurrentScreenOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Sets the current screen name.",
+        "complexTypes": [
+          "SetCurrentScreenOptions"
+        ],
+        "slug": "setcurrentscreen"
+      },
+      {
+        "name": "logEvent",
+        "signature": "(options: LogEventOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "LogEventOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Logs an app event.",
+        "complexTypes": [
+          "LogEventOptions"
+        ],
+        "slug": "logevent"
+      },
+      {
+        "name": "setSessionTimeoutDuration",
+        "signature": "(options: SetSessionTimeoutDurationOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetSessionTimeoutDurationOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Sets the duration of inactivity that terminates the current session.\n\nOnly available for Android and iOS.",
+        "complexTypes": [
+          "SetSessionTimeoutDurationOptions"
+        ],
+        "slug": "setsessiontimeoutduration"
+      },
+      {
+        "name": "setEnabled",
+        "signature": "(options: SetEnabledOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetEnabledOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Enables/disables automatic data collection.\nThe value does not apply until the next run of the app.",
+        "complexTypes": [
+          "SetEnabledOptions"
+        ],
+        "slug": "setenabled"
+      },
+      {
+        "name": "isEnabled",
+        "signature": "() => Promise<IsEnabledResult>",
+        "parameters": [],
+        "returns": "Promise<IsEnabledResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Returns whether or not automatic data collection is enabled.\n\nOnly available for Web.",
+        "complexTypes": [
+          "IsEnabledResult"
+        ],
+        "slug": "isenabled"
+      },
+      {
+        "name": "resetAnalyticsData",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "0.1.0"
+          }
+        ],
+        "docs": "Clears all analytics data for this app from the device.\nResets the app instance id.\n\nOnly available for Android and iOS.",
+        "complexTypes": [],
+        "slug": "resetanalyticsdata"
+      },
+      {
+        "name": "initiateOnDeviceConversionMeasurementWithEmailAddress",
+        "signature": "(options: InitiateOnDeviceConversionMeasurementWithEmailAddressOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InitiateOnDeviceConversionMeasurementWithEmailAddressOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "7.2.0"
+          }
+        ],
+        "docs": "Initiates on-device conversion measurement with an email address.\n\nOnly available for iOS.",
+        "complexTypes": [
+          "InitiateOnDeviceConversionMeasurementWithEmailAddressOptions"
+        ],
+        "slug": "initiateondeviceconversionmeasurementwithemailaddress"
+      },
+      {
+        "name": "initiateOnDeviceConversionMeasurementWithPhoneNumber",
+        "signature": "(options: InitiateOnDeviceConversionMeasurementWithPhoneNumberOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InitiateOnDeviceConversionMeasurementWithPhoneNumberOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "7.2.0"
+          }
+        ],
+        "docs": "Initiates on-device conversion measurement with a phone number.\n\nOnly available for iOS.",
+        "complexTypes": [
+          "InitiateOnDeviceConversionMeasurementWithPhoneNumberOptions"
+        ],
+        "slug": "initiateondeviceconversionmeasurementwithphonenumber"
+      },
+      {
+        "name": "initiateOnDeviceConversionMeasurementWithHashedEmailAddress",
+        "signature": "(options: InitiateOnDeviceConversionMeasurementWithHashedEmailAddressOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InitiateOnDeviceConversionMeasurementWithHashedEmailAddressOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "7.2.0"
+          }
+        ],
+        "docs": "Initiates on-device conversion measurement with a hashed email address.\n\nOnly available for iOS.",
+        "complexTypes": [
+          "InitiateOnDeviceConversionMeasurementWithHashedEmailAddressOptions"
+        ],
+        "slug": "initiateondeviceconversionmeasurementwithhashedemailaddress"
+      },
+      {
+        "name": "initiateOnDeviceConversionMeasurementWithHashedPhoneNumber",
+        "signature": "(options: InitiateOnDeviceConversionMeasurementWithHashedPhoneNumberOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InitiateOnDeviceConversionMeasurementWithHashedPhoneNumberOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "7.2.0"
+          }
+        ],
+        "docs": "Initiates on-device conversion measurement with a hashed phone number.\n\nOnly available for iOS.",
+        "complexTypes": [
+          "InitiateOnDeviceConversionMeasurementWithHashedPhoneNumberOptions"
+        ],
+        "slug": "initiateondeviceconversionmeasurementwithhashedphonenumber"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "GetAppInstanceIdResult",
+      "slug": "getappinstanceidresult",
+      "docs": "",
+      "tags": [
+        {
+          "text": "1.4.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "appInstanceId",
+          "tags": [
+            {
+              "text": "1.4.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The app instance id.\n\nNot defined if `FirebaseAnalytics.ConsentType.ANALYTICS_STORAGE` has been set to `FirebaseAnalytics.ConsentStatus.DENIED`.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "SetConsentOptions",
+      "slug": "setconsentoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "6.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "type",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The consent type.",
+          "complexTypes": [
+            "ConsentType"
+          ],
+          "type": "ConsentType"
+        },
+        {
+          "name": "status",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The consent status.",
+          "complexTypes": [
+            "ConsentStatus"
+          ],
+          "type": "ConsentStatus"
+        }
+      ]
+    },
+    {
+      "name": "SetUserIdOptions",
+      "slug": "setuseridoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "userId",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | null"
+        }
+      ]
+    },
+    {
+      "name": "SetUserPropertyOptions",
+      "slug": "setuserpropertyoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "key",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | null"
+        }
+      ]
+    },
+    {
+      "name": "SetCurrentScreenOptions",
+      "slug": "setcurrentscreenoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "screenName",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | null"
+        },
+        {
+          "name": "screenClassOverride",
+          "tags": [
+            {
+              "text": "null",
+              "name": "default"
+            },
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Only available for Android and iOS.",
+          "complexTypes": [],
+          "type": "string | null | undefined"
+        }
+      ]
+    },
+    {
+      "name": "LogEventOptions",
+      "slug": "logeventoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "name",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The event name.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "params",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The optional event params.",
+          "complexTypes": [],
+          "type": "{ [key: string]: any; } | undefined"
+        }
+      ]
+    },
+    {
+      "name": "SetSessionTimeoutDurationOptions",
+      "slug": "setsessiontimeoutdurationoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "duration",
+          "tags": [
+            {
+              "text": "1800",
+              "name": "default"
+            },
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Duration in seconds.",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "SetEnabledOptions",
+      "slug": "setenabledoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "enabled",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "IsEnabledResult",
+      "slug": "isenabledresult",
+      "docs": "",
+      "tags": [
+        {
+          "text": "0.1.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "enabled",
+          "tags": [
+            {
+              "text": "0.1.0",
+              "name": "since"
+            }
+          ],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "InitiateOnDeviceConversionMeasurementWithEmailAddressOptions",
+      "slug": "initiateondeviceconversionmeasurementwithemailaddressoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "7.2.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "emailAddress",
+          "tags": [
+            {
+              "text": "7.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The email address to initiate on-device conversion measurement with.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "InitiateOnDeviceConversionMeasurementWithPhoneNumberOptions",
+      "slug": "initiateondeviceconversionmeasurementwithphonenumberoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "7.2.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "phoneNumber",
+          "tags": [
+            {
+              "text": "7.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The phone number to initiate on-device conversion measurement with.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "InitiateOnDeviceConversionMeasurementWithHashedEmailAddressOptions",
+      "slug": "initiateondeviceconversionmeasurementwithhashedemailaddressoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "7.2.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "emailAddressToHash",
+          "tags": [
+            {
+              "text": "7.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The email address to initiate on-device conversion measurement with.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "InitiateOnDeviceConversionMeasurementWithHashedPhoneNumberOptions",
+      "slug": "initiateondeviceconversionmeasurementwithhashedphonenumberoptions",
+      "docs": "",
+      "tags": [
+        {
+          "text": "7.2.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "phoneNumberToHash",
+          "tags": [
+            {
+              "text": "7.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The phone number to initiate on-device conversion measurement with.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "ConsentType",
+      "slug": "consenttype",
+      "members": [
+        {
+          "name": "AdPersonalization",
+          "value": "'AD_PERSONALIZATION'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "AdStorage",
+          "value": "'AD_STORAGE'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "AdUserData",
+          "value": "'AD_USER_DATA'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "AnalyticsStorage",
+          "value": "'ANALYTICS_STORAGE'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "FunctionalityStorage",
+          "value": "'FUNCTIONALITY_STORAGE'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "PersonalizationStorage",
+          "value": "'PERSONALIZATION_STORAGE'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "ConsentStatus",
+      "slug": "consentstatus",
+      "members": [
+        {
+          "name": "Granted",
+          "value": "'GRANTED'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        },
+        {
+          "name": "Denied",
+          "value": "'DENIED'",
+          "tags": [
+            {
+              "text": "6.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

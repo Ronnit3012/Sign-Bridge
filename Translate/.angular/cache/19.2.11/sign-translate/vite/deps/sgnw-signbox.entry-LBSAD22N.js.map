@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@sutton-signwriting/sgnw-components/dist/esm/sgnw-signbox.entry.js"],
+  "sourcesContent": ["/*!\n * The Sutton SignWriting Web Components\n */\nimport { r as registerInstance, h, H as Host, g as getElement } from './_commonjsHelpers-383fba37.js';\nimport { o as overlap } from './global-4493408c.js';\nconst sgnwSignboxCss = \".sc-sgnw-signbox-h{width:100%;height:100%;border-radius:10px;display:block}\";\nconst SgnwSignbox = class {\n  constructor(hostRef) {\n    registerInstance(this, hostRef);\n  }\n  paletteSymbolDropHandler(event) {\n    const target = event.target;\n    if (overlap(target, this.el)) {\n      console.log(event.detail);\n    }\n  }\n  render() {\n    return h(Host, null, h(\"slot\", null));\n  }\n  get el() {\n    return getElement(this);\n  }\n};\nSgnwSignbox.style = sgnwSignboxCss;\nexport { SgnwSignbox as sgnw_signbox };"],
+  "mappings": ";;;;;;;;;;;;AAKA,IAAM,iBAAiB;AACvB,IAAM,cAAc,MAAM;AAAA,EACxB,YAAY,SAAS;AACnB,qBAAiB,MAAM,OAAO;AAAA,EAChC;AAAA,EACA,yBAAyB,OAAO;AAC9B,UAAM,SAAS,MAAM;AACrB,QAAI,QAAQ,QAAQ,KAAK,EAAE,GAAG;AAC5B,cAAQ,IAAI,MAAM,MAAM;AAAA,IAC1B;AAAA,EACF;AAAA,EACA,SAAS;AACP,WAAO,EAAE,MAAM,MAAM,EAAE,QAAQ,IAAI,CAAC;AAAA,EACtC;AAAA,EACA,IAAI,KAAK;AACP,WAAO,WAAW,IAAI;AAAA,EACxB;AACF;AACA,YAAY,QAAQ;",
+  "names": []
+}

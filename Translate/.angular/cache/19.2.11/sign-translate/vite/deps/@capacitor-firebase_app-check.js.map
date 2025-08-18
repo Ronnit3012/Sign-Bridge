@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@capacitor-firebase/app-check/dist/esm/index.js"],
+  "sourcesContent": ["import { registerPlugin } from '@capacitor/core';\nconst FirebaseAppCheck = registerPlugin('FirebaseAppCheck', {\n  web: () => import('./web').then(m => new m.FirebaseAppCheckWeb())\n});\nexport * from './definitions';\nexport { FirebaseAppCheck };\n"],
+  "mappings": ";;;;;;AACA,IAAM,mBAAmB,eAAe,oBAAoB;AAAA,EAC1D,KAAK,MAAM,OAAO,mBAAO,EAAE,KAAK,OAAK,IAAI,EAAE,oBAAoB,CAAC;AAClE,CAAC;",
+  "names": []
+}

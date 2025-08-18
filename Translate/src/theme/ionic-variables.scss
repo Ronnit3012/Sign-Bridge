@@ -7,13 +7,13 @@
   --ion-font-family: 'Trebuchet MS', var(--ion-default-font);
 
   /** primary **/
-  --ion-color-primary: #8500e9;
-  --ion-color-primary-rgb: 133, 0, 233;
+  --ion-color-primary: #0066cc;
+  --ion-color-primary-rgb: 0, 102, 204;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #7500cd;
-  --ion-color-primary-tint: #911aeb;
-  --ion-color-primary-accessible-text: #7f01de;
+  --ion-color-primary-shade: #005ab3;
+  --ion-color-primary-tint: #1a75d1;
+  --ion-color-primary-accessible-text: #0066cc;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -87,13 +87,13 @@
    */
 
   body {
-    --ion-color-primary: #8500e9;
-    --ion-color-primary-rgb: 133, 0, 233;
+       --ion-color-primary: #0066cc;
+    --ion-color-primary-rgb: 0, 102, 204;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255, 255, 255;
-    --ion-color-primary-shade: #7500cd;
-    --ion-color-primary-tint: #911aeb;
-    --ion-color-primary-accessible-text: #c384f2;
+    --ion-color-primary-shade: #005ab3;
+    --ion-color-primary-tint: #1a75d1;
+    --ion-color-primary-accessible-text: #4d94ff;
 
     --ion-color-secondary: #50c8ff;
     --ion-color-secondary-rgb: 80, 200, 255;

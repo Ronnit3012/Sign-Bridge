@@ -5,14 +5,13 @@ import {BaseComponent} from '../../../components/base/base.component';
 import {IonButton, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar} from '@ionic/angular/standalone';
 import {TranslateInputButtonComponent} from '../input/button/button.component';
 import {LanguageSelectorsComponent} from '../language-selectors/language-selectors.component';
-import {SendFeedbackComponent} from '../send-feedback/send-feedback.component';
 import {TranslocoPipe} from '@jsverse/transloco';
 import {NtkmeButtonModule} from '@ctrl/ngx-github-buttons';
 import {SpokenToSignedComponent} from '../spoken-to-signed/spoken-to-signed.component';
 import {SignedToSpokenComponent} from '../signed-to-spoken/signed-to-spoken.component';
 import {DropPoseFileComponent} from '../drop-pose-file/drop-pose-file.component';
 import {addIcons} from 'ionicons';
-import {cloudUpload, language, videocam} from 'ionicons/icons';
+import {cloudUpload, language, videocam, text} from 'ionicons/icons';
 import {RouterLink} from '@angular/router';
 import {LogoComponent} from '../../../components/logo/logo.component';
 
@@ -28,13 +27,10 @@ import {LogoComponent} from '../../../components/logo/logo.component';
     IonTitle,
     TranslateInputButtonComponent,
     LanguageSelectorsComponent,
-    SendFeedbackComponent,
     TranslocoPipe,
     SpokenToSignedComponent,
     SignedToSpokenComponent,
     DropPoseFileComponent,
-    IonButton,
-    RouterLink,
     LogoComponent,
   ],
 })
@@ -47,7 +43,7 @@ export class TranslateDesktopComponent extends BaseComponent implements OnInit {
   constructor() {
     super();
 
-    addIcons({language, videocam, cloudUpload});
+    addIcons({text, videocam, cloudUpload});
   }
 
   ngOnInit(): void {

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@capacitor-firebase/analytics/dist/esm/definitions.js"],
+  "sourcesContent": ["/**\n * @since 6.0.0\n */\nexport var ConsentType;\n(function (ConsentType) {\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"AdPersonalization\"] = \"AD_PERSONALIZATION\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"AdStorage\"] = \"AD_STORAGE\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"AdUserData\"] = \"AD_USER_DATA\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"AnalyticsStorage\"] = \"ANALYTICS_STORAGE\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"FunctionalityStorage\"] = \"FUNCTIONALITY_STORAGE\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentType[\"PersonalizationStorage\"] = \"PERSONALIZATION_STORAGE\";\n})(ConsentType || (ConsentType = {}));\n/**\n * @since 6.0.0\n */\nexport var ConsentStatus;\n(function (ConsentStatus) {\n  /**\n   * @since 6.0.0\n   */\n  ConsentStatus[\"Granted\"] = \"GRANTED\";\n  /**\n   * @since 6.0.0\n   */\n  ConsentStatus[\"Denied\"] = \"DENIED\";\n})(ConsentStatus || (ConsentStatus = {}));\n"],
+  "mappings": ";;;AAGO,IAAI;AAAA,CACV,SAAUA,cAAa;AAItB,EAAAA,aAAY,mBAAmB,IAAI;AAInC,EAAAA,aAAY,WAAW,IAAI;AAI3B,EAAAA,aAAY,YAAY,IAAI;AAI5B,EAAAA,aAAY,kBAAkB,IAAI;AAIlC,EAAAA,aAAY,sBAAsB,IAAI;AAItC,EAAAA,aAAY,wBAAwB,IAAI;AAC1C,GAAG,gBAAgB,cAAc,CAAC,EAAE;AAI7B,IAAI;AAAA,CACV,SAAUC,gBAAe;AAIxB,EAAAA,eAAc,SAAS,IAAI;AAI3B,EAAAA,eAAc,QAAQ,IAAI;AAC5B,GAAG,kBAAkB,gBAAgB,CAAC,EAAE;",
+  "names": ["ConsentType", "ConsentStatus"]
+}

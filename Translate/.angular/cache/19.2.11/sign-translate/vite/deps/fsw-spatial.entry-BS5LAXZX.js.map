@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@sutton-signwriting/sgnw-components/dist/esm/fsw-spatial.entry.js"],
+  "sourcesContent": ["/*!\n * The Sutton SignWriting Web Components\n */\nimport { r as registerInstance, h, H as Host, g as getElement } from './_commonjsHelpers-383fba37.js';\nimport { d as draggabilly } from './draggabilly-b10e2ab0.js';\nconst fswSpatialCss = \".sc-fsw-spatial-h{width:140px;height:140px;background:#F90;border-radius:10px;cursor:move;display:block}.is-pointer-down.sc-fsw-spatial-h{background:#09F}.is-dragging.sc-fsw-spatial-h{opacity:0.7}\";\nconst FswSymbol = class {\n  constructor(hostRef) {\n    registerInstance(this, hostRef);\n  }\n  componentDidLoad() {\n    this.draggie = new draggabilly(this.el);\n  }\n  render() {\n    return h(Host, null, h(\"slot\", null));\n  }\n  get el() {\n    return getElement(this);\n  }\n};\nFswSymbol.style = fswSpatialCss;\nexport { FswSymbol as fsw_spatial };"],
+  "mappings": ";;;;;;;;;;;;AAKA,IAAM,gBAAgB;AACtB,IAAM,YAAY,MAAM;AAAA,EACtB,YAAY,SAAS;AACnB,qBAAiB,MAAM,OAAO;AAAA,EAChC;AAAA,EACA,mBAAmB;AACjB,SAAK,UAAU,IAAI,YAAY,KAAK,EAAE;AAAA,EACxC;AAAA,EACA,SAAS;AACP,WAAO,EAAE,MAAM,MAAM,EAAE,QAAQ,IAAI,CAAC;AAAA,EACtC;AAAA,EACA,IAAI,KAAK;AACP,WAAO,WAAW,IAAI;AAAA,EACxB;AACF;AACA,UAAU,QAAQ;",
+  "names": []
+}

@@ -9,7 +9,7 @@ import {addIcons} from 'ionicons';
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
-  imports: [IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel],
+  imports: [IonTabs, IonTabBar, IonTabButton, IonLabel],
 })
 export class MainComponent {
   private router = inject(Router);

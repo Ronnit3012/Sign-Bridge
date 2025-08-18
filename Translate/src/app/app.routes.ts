@@ -20,7 +20,6 @@ export const routes: Routes = [
   {path: 'legal', loadChildren: () => import('./pages/landing/landing.routes').then(m => m.routes)},
   {
     path: '',
-    component: MainComponent,
     children: [
       {
         path: '',
@@ -34,15 +33,6 @@ export const routes: Routes = [
         path: 'translate',
         redirectTo: '',
       },
-      // {
-      //   path: 'converse',
-      //   loadChildren: () => import('./tab2/tab2.module').then(m => m.Tab2PageModule),
-      // },
-      // {
-      //   path: 'avatars',
-      //   loadChildren: () => import('./tab3/tab3.module').then(m => m.Tab3PageModule),
-      // },
-      {path: 'settings', loadChildren: () => import('./pages/settings/settings.routes').then(m => m.routes)},
     ],
   },
   {path: '**', component: NotFoundComponent},

@@ -1,0 +1,29 @@
+{
+  "name": "jquery-extend",
+  "version": "2.0.3",
+  "description": "jQuery.extend function; plain and simple",
+  "main": "extend.js",
+  "scripts": {
+    "test": "qunit -c lib/jquery.js -t test/extend-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnukem/node-jquery-extend.git"
+  },
+  "keywords": [
+    "jquery",
+    "extend",
+    "merge",
+    "deepCopy",
+    "clone"
+  ],
+  "author": "dnukem <dnukem@fknsrs.biz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnukem/node-jquery-extend/issues"
+  },
+  "devDependencies": {
+    "qunit": "~0.5.16",
+    "qunitjs": "~1.12.0"
+  }
+}
