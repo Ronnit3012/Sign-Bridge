@@ -6,7 +6,7 @@ import "./chunk-5P6RLSS7.js";
 
 // node_modules/@capacitor-firebase/app-check/dist/esm/index.js
 var FirebaseAppCheck = registerPlugin("FirebaseAppCheck", {
-  web: () => import("./web-RRM5HZEQ.js").then((m) => new m.FirebaseAppCheckWeb())
+  web: () => import("./web-LRNFTUZB.js").then((m) => new m.FirebaseAppCheckWeb())
 });
 export {
   FirebaseAppCheck

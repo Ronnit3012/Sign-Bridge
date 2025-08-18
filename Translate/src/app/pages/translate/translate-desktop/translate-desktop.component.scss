@@ -38,30 +38,67 @@
     }
   }
 
-  #translation-card {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    transition: 0.6s width cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.37);
+ #translation-card {
+  background-color: #1e1e1e; /* dark card */
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
 
-    @media (prefers-color-scheme: dark) {
-      background-color: #101010;
-    }
+  display: flex;
+  flex-direction: column;
 
-    @media #{breakpoints.$breakpoint-gt-xs} {
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.37);
-    }
+  border: 1px solid rgba(30, 144, 255, 0.25);
 
-    @media #{breakpoints.$breakpoint-gt-md} {
-      border-radius: 8px;
-      overflow: hidden;
-    }
+  app-language-selectors {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
 
-    app-language-selectors {
-      border-bottom: 1px solid var(--app-divider-color);
+    button {
+      background: transparent;
+      border: none;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #aaa;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.active {
+        color: #1e90ff;
+        border-bottom: 2px solid #1e90ff;
+        text-shadow: 0 0 6px rgba(30, 144, 255, 0.6);
+      }
+
+      &:hover {
+        color: #1e90ff;
+      }
     }
   }
+
+  textarea {
+    flex: 1;
+    background: #121212;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #e0e0e0; /* FIX: visible text */
+    resize: none;
+    padding: 12px;
+    border-radius: 8px;
+
+    /* FIX: placeholder color */
+    &::placeholder {
+      color: #888;
+      opacity: 1; /* ensure it shows */
+    }
+  }
+}
 }
 
 ntkme-github-button {

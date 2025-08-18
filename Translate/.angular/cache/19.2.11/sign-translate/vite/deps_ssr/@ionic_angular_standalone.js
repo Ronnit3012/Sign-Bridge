@@ -56,6 +56,19 @@ import {
   isRTL
 } from "./chunk-3EI7GU7D.js";
 import {
+  BACKDROP_NO_SCROLL,
+  GESTURE_CONTROLLER,
+  createGesture
+} from "./chunk-ZQYPGWC2.js";
+import {
+  KEYBOARD_DID_OPEN
+} from "./chunk-TYZ6YUY2.js";
+import {
+  Keyboard,
+  KeyboardResize,
+  getCapacitor
+} from "./chunk-RNVC37WE.js";
+import {
   addEventListener,
   assert,
   clamp,
@@ -76,11 +89,6 @@ import {
   transitionEndAsync
 } from "./chunk-BODXCW7O.js";
 import {
-  BACKDROP_NO_SCROLL,
-  GESTURE_CONTROLLER,
-  createGesture
-} from "./chunk-ZQYPGWC2.js";
-import {
   config,
   configFromSession,
   configFromURL,
@@ -88,14 +96,6 @@ import {
   printIonWarning,
   saveConfig
 } from "./chunk-SNMEKSZR.js";
-import {
-  KEYBOARD_DID_OPEN
-} from "./chunk-TYZ6YUY2.js";
-import {
-  Keyboard,
-  KeyboardResize,
-  getCapacitor
-} from "./chunk-RNVC37WE.js";
 import {
   doc,
   win
@@ -111,24 +111,24 @@ import {
   Router,
   RouterLink,
   UrlSerializer
-} from "./chunk-DT2PZJDR.js";
-import "./chunk-ZSE5URBZ.js";
+} from "./chunk-MY5TOAPC.js";
+import "./chunk-EZ6WY2IQ.js";
+import "./chunk-YU3NMJNZ.js";
 import {
   NG_VALUE_ACCESSOR,
   NgControl
-} from "./chunk-IL2GE32A.js";
-import "./chunk-VNCYKAQT.js";
-import "./chunk-TFOQNWKF.js";
+} from "./chunk-QMFFSKBY.js";
+import "./chunk-PGQGHFDK.js";
 import {
   CommonModule,
   Location,
   LocationStrategy,
   NgIf,
   NgTemplateOutlet
-} from "./chunk-KJBR5RTI.js";
+} from "./chunk-2RB2PTCD.js";
 import {
   DOCUMENT
-} from "./chunk-G4PPW6CD.js";
+} from "./chunk-VUWB2VLP.js";
 import {
   APP_INITIALIZER,
   ApplicationRef,
@@ -190,13 +190,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZVKNOM6E.js";
-import {
-  require_operators
-} from "./chunk-YH5N3U4R.js";
+} from "./chunk-DZVI3U4K.js";
 import {
   require_cjs
 } from "./chunk-6KZ4PLYM.js";
+import {
+  require_operators
+} from "./chunk-YH5N3U4R.js";
 import "./chunk-LLM2TZYI.js";
 import {
   __async,
@@ -4802,7 +4802,7 @@ var RouterOutlet = proxyCustomElement(class RouterOutlet2 extends H {
           this.swipeHandler.onStart();
         }
       };
-      this.gesture = (yield import("./swipe-back-ZQZVMXTC.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
+      this.gesture = (yield import("./swipe-back-VZRMIQ6Z.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
         var _a;
         return (_a = this.ani) === null || _a === void 0 ? void 0 : _a.progressStep(step);
       }, (shouldComplete, step, dur) => {
@@ -9491,7 +9491,7 @@ var App = proxyCustomElement(class App2 extends H {
         }
         if (config.getBoolean("inputShims", needInputShims())) {
           const platform = isPlatform(window, "ios") ? "ios" : "android";
-          import("./input-shims-HT4P6I5Y.js").then((module) => module.startInputShims(config, platform));
+          import("./input-shims-G7ZOQNID.js").then((module) => module.startInputShims(config, platform));
         }
         const hardwareBackButtonModule = yield import("./hardware-back-button-DZSEXXVK.js");
         const supportsHardwareBackButtonEvents = isHybrid2 || shouldUseCloseWatcher();
@@ -22786,7 +22786,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
     return __async(this, null, function* () {
       this.didLoad = true;
       this.rootChanged();
-      this.gesture = (yield import("./swipe-back-ZQZVMXTC.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
+      this.gesture = (yield import("./swipe-back-VZRMIQ6Z.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
       this.swipeGestureChanged();
     });
   }

@@ -6,7 +6,7 @@ import "./chunk-5P6RLSS7.js";
 
 // node_modules/@capacitor-firebase/storage/dist/esm/index.js
 var FirebaseStorage = registerPlugin("FirebaseStorage", {
-  web: () => import("./web-CVUR6WEX.js").then((m) => new m.FirebaseStorageWeb())
+  web: () => import("./web-MYX65JBU.js").then((m) => new m.FirebaseStorageWeb())
 });
 export {
   FirebaseStorage

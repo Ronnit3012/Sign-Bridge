@@ -17,9 +17,6 @@
     @for (lang of topLanguages; track lang) {
       <mat-tab (select)="selectLanguage(lang)">
         <ng-template mat-tab-label>
-          @if (flags) {
-            <app-flag-icon [country]="langCountries[lang]" [squared]="true" />
-          }
           {{ langNames[lang] }}
         </ng-template>
       </mat-tab>
@@ -34,9 +31,6 @@
       color="primary"
       expand="full"
       fill="clear">
-      @if (flags) {
-        <app-flag-icon [country]="langCountries[detectedLanguage]" [squared]="true" />
-      }
       <span class="wrap-text">{{ t('detected', {lang: langNames[detectedLanguage]}) }}</span>
     </ion-button>
   } @else {
@@ -47,9 +41,6 @@
       expand="full"
       fill="clear">
       @if (language) {
-        @if (flags) {
-          <app-flag-icon [country]="langCountries[language]" [squared]="true"></app-flag-icon>
-        }
         <span class="wrap-text">{{ langNames[language] }}</span>
       } @else {
         {{ t('detect') }}
@@ -75,9 +66,6 @@
       }
       @for (language of languages; track language) {
         <button (click)="selectLanguage(language)" mat-menu-item>
-          @if (flags) {
-            <app-flag-icon [country]="langCountries[language]" [squared]="true"></app-flag-icon>
-          }
           {{ langNames[language] }}
         </button>
       }

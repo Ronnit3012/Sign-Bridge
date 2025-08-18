@@ -1,10 +1,10 @@
 import {
   appGlobalScript
-} from "./chunk-2K7UIDHG.js";
+} from "./chunk-N2PYFGBP.js";
 import {
   bootstrapLazy,
   promiseResolve
-} from "./chunk-5ZULVOZL.js";
+} from "./chunk-BDJSXV6K.js";
 import "./chunk-H7FQKYJT.js";
 
 // node_modules/@sutton-signwriting/sgnw-components/dist/esm/polyfills/index.js

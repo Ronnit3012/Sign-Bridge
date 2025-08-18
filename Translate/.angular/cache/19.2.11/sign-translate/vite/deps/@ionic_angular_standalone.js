@@ -1,26 +1,4 @@
 import {
-  startFocusVisible
-} from "./chunk-7Q5HCUSL.js";
-import {
-  iosTransitionAnimation
-} from "./chunk-7ECWNBHJ.js";
-import {
-  mdTransitionAnimation
-} from "./chunk-SNWST63V.js";
-import {
-  LIFECYCLE_DID_ENTER,
-  LIFECYCLE_DID_LEAVE,
-  LIFECYCLE_WILL_ENTER,
-  LIFECYCLE_WILL_LEAVE,
-  LIFECYCLE_WILL_UNLOAD,
-  createAnimation,
-  deepReady,
-  lifecycle,
-  setPageHidden,
-  transition,
-  waitForMount
-} from "./chunk-KFPXBZKR.js";
-import {
   MENU_BACK_BUTTON_PRIORITY,
   OVERLAY_BACK_BUTTON_PRIORITY,
   shouldUseCloseWatcher
@@ -42,10 +20,6 @@ import {
   getCapacitor
 } from "./chunk-M5FIGEAW.js";
 import {
-  doc,
-  win
-} from "./chunk-44IZU6OF.js";
-import {
   ION_CONTENT_CLASS_SELECTOR,
   ION_CONTENT_ELEMENT_SELECTOR,
   disableContentScrollY,
@@ -56,6 +30,28 @@ import {
   printIonContentErrorMsg,
   resetContentScrollY
 } from "./chunk-HERXKBNL.js";
+import {
+  startFocusVisible
+} from "./chunk-7Q5HCUSL.js";
+import {
+  iosTransitionAnimation
+} from "./chunk-OYNLCTBQ.js";
+import {
+  mdTransitionAnimation
+} from "./chunk-6GCBLHUX.js";
+import {
+  LIFECYCLE_DID_ENTER,
+  LIFECYCLE_DID_LEAVE,
+  LIFECYCLE_WILL_ENTER,
+  LIFECYCLE_WILL_LEAVE,
+  LIFECYCLE_WILL_UNLOAD,
+  createAnimation,
+  deepReady,
+  lifecycle,
+  setPageHidden,
+  transition,
+  waitForMount
+} from "./chunk-WOSB6UEH.js";
 import {
   Build,
   Fragment,
@@ -71,6 +67,10 @@ import {
   setMode,
   writeTask
 } from "./chunk-PX7OELNL.js";
+import {
+  doc,
+  win
+} from "./chunk-44IZU6OF.js";
 import {
   addEventListener,
   assert,
@@ -108,13 +108,13 @@ import {
   RouterLink,
   UrlSerializer
 } from "./chunk-UETCPE7H.js";
+import "./chunk-D7IA7S5H.js";
+import "./chunk-2AKPDWSP.js";
+import "./chunk-NL6DYHSA.js";
 import {
   NG_VALUE_ACCESSOR,
   NgControl
 } from "./chunk-TTTQHSWU.js";
-import "./chunk-D7IA7S5H.js";
-import "./chunk-2AKPDWSP.js";
-import "./chunk-NL6DYHSA.js";
 import {
   CommonModule,
   Location,
@@ -9490,7 +9490,7 @@ var App = proxyCustomElement(class App2 extends H {
         }
         if (config.getBoolean("inputShims", needInputShims())) {
           const platform = isPlatform(window, "ios") ? "ios" : "android";
-          import("./input-shims-B6WRYH2Z.js").then((module) => module.startInputShims(config, platform));
+          import("./input-shims-THKLSWTP.js").then((module) => module.startInputShims(config, platform));
         }
         const hardwareBackButtonModule = yield import("./hardware-back-button-TAKYKLRY.js");
         const supportsHardwareBackButtonEvents = isHybrid2 || shouldUseCloseWatcher();

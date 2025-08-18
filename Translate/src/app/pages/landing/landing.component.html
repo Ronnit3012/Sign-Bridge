@@ -64,3 +64,58 @@
   <router-outlet />
   <app-landing-footer />
 </ion-content>
+
+
+<style>
+  .dark-theme {
+    --background: #121212; /* dark background */
+    color: #ffffff;
+  }
+
+  .translator-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .text-box {
+    flex: 1;
+    background: #1e1e1e; /* dark card */
+    border-radius: 10px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 1px solid #2a2a2a;
+  }
+
+  .lang-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #aaa;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .lang-btn.active {
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+  }
+
+  .swap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #1e90ff;
+  }
+</style>

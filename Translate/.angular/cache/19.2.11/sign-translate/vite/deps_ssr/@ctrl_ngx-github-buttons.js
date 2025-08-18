@@ -3,8 +3,8 @@ import {
   CommonModule,
   DecimalPipe,
   NgIf
-} from "./chunk-KJBR5RTI.js";
-import "./chunk-G4PPW6CD.js";
+} from "./chunk-2RB2PTCD.js";
+import "./chunk-VUWB2VLP.js";
 import {
   Component,
   Input,
@@ -32,9 +32,9 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-ZVKNOM6E.js";
-import "./chunk-YH5N3U4R.js";
+} from "./chunk-DZVI3U4K.js";
 import "./chunk-6KZ4PLYM.js";
+import "./chunk-YH5N3U4R.js";
 import "./chunk-LLM2TZYI.js";
 import {
   __async

@@ -1,11 +1,11 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   appGlobalScript
-} from "./chunk-MRBZ3E46.js";
+} from "./chunk-E26NIBV5.js";
 import {
   bootstrapLazy,
   promiseResolve
-} from "./chunk-X2GK7HYQ.js";
+} from "./chunk-TBXVSPOQ.js";
 import "./chunk-5P6RLSS7.js";
 
 // node_modules/@sutton-signwriting/sgnw-components/dist/esm/polyfills/index.js

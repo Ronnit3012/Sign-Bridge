@@ -7,8 +7,8 @@ export function prerenderOpenSearch(req: express.Request, res: express.Response)
 
   const body = `
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Sign Translate</ShortName>
-  <Description>Translate on Sign Translate</Description>
+  <ShortName>Sign-Bridge</ShortName>
+  <Description>Translate on Sign-Bridge</Description>
   <Url type="text/html" method="get" template="https://sign.mt/?text={searchTerms}&amp;utm_source=opensearch"/>
   <Query role="example" searchTerms="Hello"></Query>
 </OpenSearchDescription>`;
