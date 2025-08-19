@@ -51,7 +51,7 @@
 
 <p align="center">
   <a href="https://sign.mt" target="_blank">
-    <img src="src/assets/promotional/about/hero.webp" alt="Sign Language Translation Demo Image" />
+    <img src="src/assets/update.png" alt="Sign Language Translation Demo Image" />
   </a>
 </p>
 
