@@ -2,8 +2,8 @@
 
 @media #{breakpoints.$breakpoint-gt-xs} {
   .container::before {
-    background-color: var(--app-tinted-background-color);
-    border-bottom: 1px solid var(--app-divider-color);
+    // background-color: var(--app-tinted-background-color);
+    // border-bottom: 1px solid var(--app-divider-color);
     content: '';
     display: block;
     height: 106px;

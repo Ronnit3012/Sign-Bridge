@@ -3,12 +3,14 @@
 :host {
   display: grid;
   width: 100%;
-  grid-template-areas: 'spoken signwriting signed';
-  grid-template-columns: auto 100px 50%;
+  grid-template-areas: "spoken signwriting signed";
+    grid-template-columns: 2fr 1fr 2fr;
 
   @media #{breakpoints.$breakpoint-lt-sm} {
-    grid-template-areas: 'signed signed' 'spoken signwriting';
-    grid-template-columns: auto 100px;
+    grid-template-areas:
+      "signed signed"
+      "spoken signwriting";
+    grid-template-columns: 2fr 1fr;
 
     app-signed-language-output {
       border-bottom: 1px solid var(--app-divider-color);

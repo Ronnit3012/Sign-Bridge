@@ -13,11 +13,10 @@ class="spoken-languages lang-tabs"
   id="swap-languages"
   fill="clear"
   expand="full"
-  color="dark"
   [disabled]="(spokenLanguage$ | async) === null && (detectedLanguage$ | async) === null"
   [matTooltip]="'translate.swapLanguages' | transloco"
   [attr.aria-label]="'translate.swapLanguages' | transloco">
-  <ion-icon name="swap-horizontal" />
+  <ion-icon name="swap-horizontal" class="swap-horizontal"/>
 </ion-button>
 
 <app-language-selector
@@ -29,9 +28,9 @@ class="signed-languages lang-tabs"
   (languageChange)="setSpokenLanguage($event)"></app-language-selector>
   
   <style>
+
  .lang-tabs {
   display: inline-flex;
-  gap: 8px;
 }
 
 .lang-tabs ::ng-deep .mdc-tab {
@@ -44,7 +43,6 @@ class="signed-languages lang-tabs"
   cursor: pointer;
   transition: all 0.2s;
   font-weight: 500;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +56,38 @@ class="signed-languages lang-tabs"
   background: #77a9de73;
   color: #5d5d5d76 !important;
   border-color: #007bff;
+}
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* needed for absolute centering */
+  width: 100%;
+  grid-template-areas: "spoken-languages swap-btn signed-languages";
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.spoken-languages {
+  order: 1;
+  width: calc(50% - 100px); 
+}
+
+.swap-btn {
+  order: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto !important;   /* overrides expand="full" */
+  color: #007bff;
+}
+
+.signed-languages {
+  order: 3;
+  width: calc(50% - 100px); /* Adjusted to match spoken languages */
+}
+
+.swap-horizontal {
+  font-size: 30px;
 }
 
   </style>
