@@ -5,7 +5,7 @@
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <!-- <ion-content> -->
       <ion-list>
         <ion-list-header lines="full">
           <ion-label>Pages</ion-label>
@@ -18,7 +18,7 @@
           }
         </ion-menu-toggle>
       </ion-list>
-    </ion-content>
+    <!-- </ion-content> -->
     <ion-footer>
       <ion-button routerLink="/" color="primary" queryParamsHandling="preserve" fill="clear">
         {{ 'landing.try' | transloco }}
@@ -60,10 +60,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" id="main-content">
+<div>
   <router-outlet />
   <app-landing-footer />
-</ion-content>
+</div>
 
 
 <style>

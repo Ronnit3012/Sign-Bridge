@@ -1,4 +1,5 @@
 <app-language-selector
+class="spoken-languages lang-tabs"
   [flags]="true"
   [hasLanguageDetection]="false"
   [languages]="translation.signedLanguages"
@@ -7,6 +8,7 @@
   (languageChange)="setSignedLanguage($event)"></app-language-selector>
 
 <ion-button
+ class="swap-btn"
   (click)="swapLanguages()"
   id="swap-languages"
   fill="clear"
@@ -19,8 +21,43 @@
 </ion-button>
 
 <app-language-selector
+class="signed-languages lang-tabs"
   [hasLanguageDetection]="spokenToSigned"
   [languages]="translation.spokenLanguages"
   [language]="spokenLanguage$ | async"
   translationKey="languages"
   (languageChange)="setSpokenLanguage($event)"></app-language-selector>
+  
+  <style>
+ .lang-tabs {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.lang-tabs ::ng-deep .mdc-tab {
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  margin: 0 4px;
+  background: transparent;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-tabs ::ng-deep .mdc-tab:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.lang-tabs ::ng-deep .mdc-tab--active {
+  background: #77a9de73;
+  color: #5d5d5d76 !important;
+  border-color: #007bff;
+}
+
+  </style>
